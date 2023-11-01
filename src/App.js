@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import SummaryPage from './pages/summary'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Toaster } from 'react-hot-toast';
+
+const App = () => {
+	return (
+		<div>
+			<div><Toaster /></div>
+			<div className='p-4 md:px-8 md:py-4'>
+				<SummaryPage />
+			</div>
+		</div>
+	)
 }
 
-export default App;
+export default App
